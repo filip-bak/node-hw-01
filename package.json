@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
@@ -14,5 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^11.0.0",
+    "nanoid": "^3.3.6"
   }
 }
