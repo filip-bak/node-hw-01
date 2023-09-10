@@ -21,7 +21,6 @@ function listContacts() {
 
 function getContactById(contactId) {
   fs.readFile(contactsPath, "utf8", (err, data) => {
-    if (!contactId) return;
     if (err) {
       console.log(colors.error(`Reading error: ${err.message}`));
       return;
@@ -42,7 +41,6 @@ function getContactById(contactId) {
 }
 
 function removeContact(contactId) {
-  if (!contactId) return;
   fs.readFile(contactsPath, "utf8", (err, data) => {
     if (err) {
       console.log(colors.error(`Reading error: ${err.message}`));
